@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>makeup page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar clearfix smooth">
+        <a href="http://127.0.0.1:5500/index.html#home" class="navbar-brand">
+            <img src="images/logo.jpg" class="logo-image">
+            <span class="logo-text">BeautyCare</span>
+        </a>
+
+        <div class="mainmenu clearfix">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+
+                <li>
+                    <a href="#cart">Cart</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="banner min-h center" id="home">
+        <h1>Beauty and Personal Care: MakeUp</h1>
+        <p>
+            We give the best makeup for any age group. We have any type an skin type makeup.
+        </p>
+    </section>
+
+    <section class="about-us min-h center" id="about">
+        <h1>About Us</h1>
+        <p>
+            Welcome to our makeup haven! 🌸 At our core, we believe that makeup is more than just products; it's a form of self-expression and creativity that everyone can enjoy. Whether you're just starting your makeup journey or you're a seasoned pro, we're here to provide you with the best products for every skin type and occasion.
+            Our mission is to make sure everyone, no matter their age or style, feels confident and beautiful. We offer a wide range of makeup products, from foundations that perfectly match your skin tone to vibrant eyeshadows that let your personality shine through.
+        </p>
+
+        <p>
+            We’re passionate about quality, which is why we carefully select ingredients that are safe and gentle on your skin. Whether you’re going for a natural look or something more glamorous, we have everything you need to create your perfect look.
+            Join us in celebrating beauty in all its forms. With our makeup, every day is an opportunity to express yourself and feel your best!
+        </p>
+    </section>
+
+    <section class="makeup-products min-h center" id="products">
+        <h1>Products</h1>
+        <div class="all-products">
+            <div class="product">
+                <img src="images/lipstick.webp" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Pink Lipstick</h4>
+                    <p class="product-price">R150.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/foundation.jpg" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Foundation</h4>
+                    <p class="product-price">R450.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/eyelash-curler.jpg" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Eyelash-curler</h4>
+                    <p class="product-price">R120.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/mascara.webp" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Mascara</h4>
+                    <p class="product-price">R90.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/powder.jpg" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Powder</h4>
+                    <p class="product-price">R200.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/tweezer.jpg" alt="lipstick">
+                <div class="product-info">
+                    <h4 class="product-title">Tweezer</h4>
+                    <p class="product-price">R25.00</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card min-h center" id="cart">
+        <h1>Shopping Cart</h1>
+        <div class="cart-summary">
+            <div class="cart-item">
+                <img src="images/lipstick.webp" alt="lipstick">
+                <div class="cart-item-info">
+                    <h4>Pink Lipstick</h4>
+                    <p>Quality: 1</p>
+                    <p>Price: R150</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="images/powder.jpg" alt="powder">
+                <div class="cart-item-info">
+                    <h4>Powder</h4>
+                    <p>Quality: 1</p>
+                    <p>Price: R450</p>
+                </div>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: R600.00</h3>
+            </div>
+
+            <div class="cart-action">
+                <a class="btn btn-continue" href="#products">Continue Shopping</a>
+            </div>
+
+            <div class="cart-action">
+                <a class="btn btn-checkout" href="#products">Proceed to Checkout</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact min-h center" id="contact">
+        <h1>Contact Us</h1>
+        <p>
+            We'd love to hear from you! Please fill out the form below to get in touch with us.
+        </p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if(scroll >= 100){
+                $(".navbar").addClass("scrolled");
+            }else{
+                $(".navbar").remove("scrolled");
+            }
+        })
+    </script>
+
+    <footer>
+        <div class="footer-copyright">
+            <p>&copy; 2024 BeautyCare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
