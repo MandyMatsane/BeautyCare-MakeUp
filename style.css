@@ -2,16 +2,16 @@ html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: Verdana;
     scroll-behavior: smooth;
 }
 
 .clearfix::after {
     content: ".";
-    line-height: 0;
-    height: 0;
+    line-height: 0px;
+    height: 0px;
     display: block;
     clear: both;
     visibility: hidden;
@@ -71,22 +71,25 @@ section>p {
 .navbar {
     width: 100%;
     background: transparent;
-    padding: 20px 0;
+    padding: 20px 0px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     z-index: 9999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s;
+    overflow-x: auto;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin: 0;
+    margin-left: 150px;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .logo-text {
@@ -103,8 +106,8 @@ section>p {
 
 .mainmenu>ul {
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 .mainmenu>ul>li {
@@ -117,11 +120,11 @@ section>p {
     font-weight: bold;
     display: inline-block;
     padding: 10px 20px;
-    margin: 0;
+    margin: 0 20px;
 }
 
 .scrolled {
-    padding: 10px 0;
+    padding: 10px 0px;
     background-color: #fff;
 }
 
@@ -227,9 +230,9 @@ section>p {
 }
 
 .cart-item img {
-    width: 100px;
-    height: auto;
-    margin-right: 1rem;
+   width: 100px;
+   height: auto;
+   margin-right: 1rem;
 }
 
 .cart-item-info {
@@ -309,46 +312,49 @@ section>p {
 
 /*for responsive purposes*/
 @media(max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        align-items: center;
-        padding: 10px;
-        background-color: #fff; /* Optional: to ensure visibility */
+    section > h1 {
+        font-size: 2.5rem;
     }
 
-    .navbar-brand {
-        margin-left: 0;
-    }
-
-    .mainmenu {
-        flex-direction: row;
-        width: auto;
-    }
-
-    .mainmenu>ul {
-        flex-direction: row;
-    }
-
-    .mainmenu>ul>li {
-        margin: 0;
-    }
-
-    .mainmenu>ul>li>a {
-        padding: 10px 15px;
-    }
-}
-
-@media(max-width: 480px) {
-    section>h1 {
-        font-size: 2rem;
-    }
-
-    section>p {
-        font-size: 0.9rem; 
-        padding: 0 5px;
+    section > p {
+        font-size: 1rem; 
+        padding: 0 10px;
     }
 
     .banner {
-        padding: 1rem;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .mainmenu {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: center;
+    }
+
+    .mainmenu > ul {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mainmenu > ul > li {
+        display: inline-block; /* Ensure items are displayed inline */
+    }
+
+    .mainmenu > ul > li > a {
+        padding: 10px 15px; /* Adjust padding for mobile */
+        text-align: center;
+        display: block;
+        width: auto; /* Ensure width adjusts to content */
     }
 }
