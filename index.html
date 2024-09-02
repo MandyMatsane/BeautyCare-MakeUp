@@ -41,10 +41,113 @@
     <section class="banner min-h center" id="home">
         <h1>Beauty and Personal Care: MakeUp</h1>
         <p>
-            We give the best makeup for any age group. We have any type an skin type makeup.
+            Explore our premium makeup for every age and skin type, tailored to enhance your unique beauty
         </p>
     </section>
 
+     <!-- Search Bar -->
+     <div class="search-container">
+        <input type="text" id="search" placeholder="Search for products...">
+        <button id="search-button">Search</button>
+    </div>
+
+<!-- Filter Options -->
+<section class="filter-container min-h center" id="filters">
+    <h1>Filter Products</h1>
+    
+    <!-- Filter Groups -->
+    <div class="filter-groups">
+        <!-- Category Filter -->
+        <div class="filter-group">
+            <h2>Category</h2>
+            <div class="filter-select">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="lipstick">Lipstick</option>
+                    <option value="foundation">Foundation</option>
+                    <option value="mascara">Mascara</option>
+                    <!-- Add more categories as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <!-- Price Range Filter -->
+        <div class="filter-group">
+            <h2>Price Range</h2>
+            <div class="filter-select">
+                <label for="price-filter">Price Range:</label>
+                <select id="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="under-100">Under R100</option>
+                    <option value="100-300">R100 - R300</option>
+                    <option value="over-300">Over R300</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Brand Filter -->
+        <div class="filter-group">
+            <h2>Brand</h2>
+            <div class="filter-select">
+                <label for="brand-filter">Brand:</label>
+                <select id="brand-filter">
+                    <option value="">All Brands</option>
+                    <option value="brand1">Brand 1</option>
+                    <option value="brand2">Brand 2</option>
+                    <option value="brand3">Brand 3</option>
+                    <!-- Add more brands as needed -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Rating Filter -->
+        <div class="filter-group">
+            <h2>Rating</h2>
+            <div class="filter-select">
+                <label for="rating-filter">Rating:</label>
+                <select id="rating-filter">
+                    <option value="">All Ratings</option>
+                    <option value="4-stars">4 Stars & Up</option>
+                    <option value="3-stars">3 Stars & Up</option>
+                    <option value="2-stars">2 Stars & Up</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="featured-products min-h center">
+        <h1>Featured Products</h1>
+        <div class="featured-products-container">
+            <div class="product">
+                <img src="images/exclusive.webp" alt="Featured Product 1">
+                <div class="product-info">
+                    <h4 class="product-title">Exclusive Lipstick</h4>
+                    <p class="product-price">R180.00</p>
+                    <p class="product-description">A luxurious lipstick with rich, long-lasting color. Perfect for any occasion.</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/premium.webp" alt="Featured Product 2">
+                <div class="product-info">
+                    <h4 class="product-title">Premium Foundation</h4>
+                    <p class="product-price">R500.00</p>
+                    <p class="product-description">Provides full coverage with a natural finish. Ideal for all skin types.</p>
+                    <a class="product-btn" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotion min-h center">
+        <h1>Special Offer!</h1>
+        <p>Get 20% off on your first purchase. Use code <strong>BEAUTY20</strong> at checkout.</p>
+        <a class="promo-btn" href="#products">Shop Now</a>
+    </section>
+    
     <section class="about-us min-h center" id="about">
         <h1>About Us</h1>
         <p>
@@ -66,6 +169,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Pink Lipstick</h4>
                     <p class="product-price">R150.00</p>
+                    <p class="product-description">A vibrant pink lipstick that adds a pop of color to your look.Formulated for long-lasting wear.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>
@@ -74,6 +178,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Foundation</h4>
                     <p class="product-price">R450.00</p>
+                    <p class="product-description">High-quality foundation offering full coverage with a natural finish. Suitable for all skin types, providing a flawless look throughout the day.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>
@@ -82,6 +187,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Eyelash-curler</h4>
                     <p class="product-price">R120.00</p>
+                    <p class="product-description">Precision eyelash curler for beautiful, long-lasting curl. Designed to enhance the shape of your lashes with ease.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>
@@ -90,6 +196,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Mascara</h4>
                     <p class="product-price">R90.00</p>
+                    <p class="product-description">Lengthening and volumizing mascara that defines and separates lashes. Adds dramatic flair to your eyes with every swipe.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>
@@ -98,6 +205,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Powder</h4>
                     <p class="product-price">R200.00</p>
+                    <p class="product-description">Translucent powder that sets your makeup and controls shine. Ensures a smooth and matte finish for a perfect look all day.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>
@@ -106,6 +214,7 @@
                 <div class="product-info">
                     <h4 class="product-title">Tweezer</h4>
                     <p class="product-price">R25.00</p>
+                    <p class="product-description">High-precision tweezer designed for flawless brow grooming. Essential tool for maintaining perfectly shaped eyebrows.</p>
                     <a class="product-btn" href="#">Buy Now</a>
                 </div>
             </div>

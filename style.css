@@ -4,8 +4,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: Verdana;
     scroll-behavior: smooth;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 .clearfix::after {
@@ -53,6 +53,12 @@ section>p {
     height: auto;
     font-size: 1.2rem;
     text-align: center;
+}
+
+/* Section titles */
+section > h1 {
+    font-size: 3rem; 
+    margin: 0.5rem 0;
 }
 
 .banner {
@@ -121,6 +127,13 @@ section>p {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Hover effect */
+.mainmenu>ul>li>a:hover {
+    background-color: #f0f0f0;
+    color: #cf4278; 
+    border-radius: 5px;
 }
 
 .scrolled {
@@ -128,7 +141,41 @@ section>p {
     background-color: #fff;
 }
 
-/*for about page*/
+/*usome updated parts*/
+.featured-products-container {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-products .product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+}
+
+.promotion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.promo-btn {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 /*for product page*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
@@ -151,7 +198,7 @@ section>p {
     color: #212021;
     text-align: center;
     width: 240px;
-    height: 350px;
+    height: auto;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -160,6 +207,7 @@ section>p {
     border-radius: 1.2rem;
     margin: 2rem;
     transform: all 0.3s;
+    
 }
 
 .product:hover img {
@@ -174,6 +222,20 @@ section>p {
     height: 200px;
     margin: 1rem;
     transition: all 0.3s;
+}
+.product a {
+    display: inline-block;
+    background-color: rgb(172, 44, 167);
+    color: #ececec;
+    text-decoration: none;
+    padding: 1.2rem 2rem; /* Adjust as needed */
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.product a:hover {
+    transform: scale(1.1);
 }
 
 .product a:link, .product a:visited {
@@ -310,10 +372,79 @@ section>p {
     background-color: #a43e7c;
 }
 
+/* Product descriptions */
+.product-description {
+    font-size: 16px; 
+    color: #444;
+}
+
+/*filtering*/
+/* Professional styling for the filter container */
+.filter-container {
+    margin: 30px 0;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Increase container width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-container h1 {
+    font-size: 1.8em; /* Increase font size for better readability */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.filter-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increase gap between filter groups */
+}
+
+.filter-group {
+    flex: 1 1 auto;
+    min-width: 250px; /* Increase minimum width of filter groups */
+}
+
+.filter-group h2 {
+    font-size: 1.4em; /* Increase font size for filter group headings */
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.filter-select {
+    margin-top: 10px;
+}
+
+.filter-select label {
+    display: block;
+    font-size: 1.2em; /* Increase font size for labels */
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.filter-select select {
+    width: 100%;
+    padding: 12px; /* Increase padding for better usability */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    color: #333;
+}
+
+
 /*for responsive purposes*/
 @media(max-width: 768px) {
+    .product-description {
+        font-size: 14px; 
+    }
+
     section > h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     section > p {
@@ -348,13 +479,22 @@ section>p {
     }
     
     .mainmenu > ul > li {
-        display: inline-block; /* Ensure items are displayed inline */
+        display: inline-block;
     }
 
     .mainmenu > ul > li > a {
-        padding: 10px 15px; /* Adjust padding for mobile */
+        padding: 10px 15px; 
         text-align: center;
         display: block;
-        width: auto; /* Ensure width adjusts to content */
+        width: auto; 
+    }
+
+    .product {
+        width: 100%; 
+        margin: 0.5rem; 
+    }
+
+    .product a {
+        padding: 0.8rem 1.5rem;
     }
 }
